@@ -217,3 +217,7 @@ The same analysis is also saved in `analysis_report.json`.
 - Support configurable score weights and recommendation thresholds.
 - Store analysis history in a database.
 - Add privacy controls for securely removing resume data.
+
+## Demo Video
+
+[Watch the Intelligent Resume Analyzer Demo](https://youtu.be/LsFSOYBerVY)
