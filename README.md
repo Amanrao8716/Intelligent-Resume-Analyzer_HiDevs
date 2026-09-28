@@ -1,298 +1,183 @@
-# 🧠 Smart Hiring Assistant v2
+# 🧠 Intelligent Resume Analyzer
 
-> A production-grade resume intelligence system built entirely in Python — no external ML libraries required.
+An AI-inspired resume screening tool built using Python that automates the initial candidate evaluation process. The system extracts relevant information from resumes, compares candidate skills and experience against job requirements, and generates a match score with hiring recommendations.
 
-Automates candidate screening by parsing resumes, matching candidates to job requirements with a multi-factor scoring engine, and generating rich reports in plain text, JSON, and HTML.
+Designed as a practical HR Tech solution, this project demonstrates how resume parsing, skill matching, and structured reporting can simplify the recruitment process.
 
 ---
 
 ## ✨ Features
 
-| Feature | Details |
-|---|---|
-| **Advanced NLP Parser** | Multi-strategy extraction: section-aware parsing, regex patterns, heuristic confidence scoring |
-| **Skill Taxonomy Engine** | 100+ skills grouped across 8 domains (languages, web, cloud, ML, etc.) with fuzzy adjacent-skill matching |
-| **Weighted Scoring** | Configurable weights across skills (required + preferred), experience (with overqualification handling), and education |
-| **Work History Parsing** | Structured extraction of job titles, companies, and date ranges |
-| **3 Report Formats** | Plain text (terminal/email), JSON (APIs/tools), self-contained HTML (browser/sharing) |
-| **Batch Analytics** | Score distributions, skill gap analysis, top candidate identification across candidate pools |
-| **CLI Interface** | Full argparse CLI with 6 built-in job presets and directory-based batch processing |
-| **56-Test Suite** | Unit + integration tests covering all components |
-| **Zero Dependencies** | Pure Python stdlib — nothing to install |
+| Feature                      | Details                                                                           |
+| ---------------------------- | --------------------------------------------------------------------------------- |
+| **Resume Parsing**           | Extracts candidate name, email, skills, and years of experience from resume text. |
+| **Skill Matching**           | Compares candidate skills with the required skills for a job role.                |
+| **Experience Evaluation**    | Considers candidate experience while calculating the match score.                 |
+| **Match Score**              | Generates a score between 0 and 100 based on candidate-job compatibility.         |
+| **Hiring Recommendation**    | Provides a recommendation based on the candidate's overall score.                 |
+| **Missing Skills Detection** | Identifies skills required for a role that are not found in the resume.           |
+| **JSON Reports**             | Stores structured candidate information and analysis results in JSON format.      |
+| **Error Handling**           | Handles missing or incomplete information during resume processing.               |
+| **Modular Architecture**     | Separates parsing, matching, and report generation into independent modules.      |
 
 ---
 
 ## 📁 Project Structure
 
-```
-hiring_assistant/
+```text
+Intelligent-Resume-Analyzer_HiDevs/
 │
-├── hiring_assistant/           # Core package
-│   ├── __init__.py             # Public API exports
-│   ├── models.py               # Data models (Candidate, JobRequirement, MatchResult...)
-│   ├── parser.py               # Resume parser with confidence scoring
-│   ├── matcher.py              # Weighted matching engine
-│   ├── analytics.py            # Batch analytics engine
-│   ├── reporter.py             # TXT / HTML report generator
-│   ├── file_manager.py         # JSON + file persistence
-│   └── assistant.py            # Top-level orchestrator (HiringAssistant)
+├── app.py                  # Main application entry point
+├── resume_parser.py        # Extracts candidate details from resumes
+├── matcher.py              # Calculates skill and experience match scores
+├── report_generator.py    # Generates analysis reports
 │
-├── tests/
-│   └── test_suite.py           # 56 unit + integration tests
+├── requirements.txt        # Project dependencies
+├── README.md               # Project documentation
+├── .gitignore              # Excludes unnecessary files
 │
-├── data/
-│   └── sample_resumes/         # Sample .txt resume files
-│
-├── output/                     # Generated reports (auto-created)
-├── cli.py                      # Command-line interface
-├── demo.py                     # Runnable demo (5 scenarios)
-└── requirements.txt            # No external dependencies
+├── resume.json             # Generated candidate profile (if created)
+└── analysis_report.json    # Generated analysis report (if created)
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
-# Clone and enter the project
-git clone https://github.com/yourusername/smart-hiring-assistant.git
-cd smart-hiring-assistant
-
-# No pip install needed — pure stdlib!
-
-# Run the full demo
-python demo.py
-
-# Analyze a single resume
-python cli.py analyze --resume data/sample_resumes/alice.txt --job backend
-
-# Rank multiple candidates
-python cli.py rank --dir data/sample_resumes --job fullstack
-
-# Run the test suite
-python cli.py test
-
-# See all job presets
-python cli.py jobs
+git clone https://github.com/Amanrao8716/Intelligent-Resume-Analyzer_HiDevs.git
 ```
 
----
-
-## 🔧 Python API
-
-### Single Candidate Analysis
-
-```python
-from hiring_assistant import HiringAssistant
-from hiring_assistant.models import JobRequirement, EducationLevel
-
-assistant = HiringAssistant(output_dir="output")
-
-job = JobRequirement(
-    title="Senior Backend Engineer",
-    required_skills=["python", "rest api", "postgresql", "docker", "git"],
-    preferred_skills=["aws", "redis", "ci/cd"],
-    min_experience=4,
-    education_required=EducationLevel.BACHELOR,
-)
-
-with open("resume.txt") as f:
-    resume_text = f.read()
-
-candidate, results = assistant.process_resume(
-    resume_text=resume_text,
-    jobs=[job],
-    save=True,           # saves JSON + TXT + HTML to output/
-    generate_html=True,
-)
-
-print(f"Score: {results[0].overall_score}")
-print(f"Recommendation: {results[0].recommendation.value}")
-```
-
-### Batch Ranking
-
-```python
-# Rank multiple candidates for one job
-ranked = assistant.rank_candidates(
-    resumes=[resume1_text, resume2_text, resume3_text],
-    job=job,
-    save=True,
-)
-
-for candidate, result in ranked:
-    print(f"{result.candidate_name}: {result.overall_score:.1f}")
-```
-
-### Custom Scoring Weights
-
-```python
-from hiring_assistant.matcher import MatchWeights
-
-# Skills-heavy weighting for highly technical roles
-weights = MatchWeights(skills=0.70, experience=0.20, education=0.10)
-assistant = HiringAssistant(weights=weights)
-```
-
-### Custom Skill Taxonomy
-
-```python
-# Add domain-specific skills not in the default taxonomy
-assistant = HiringAssistant(
-    custom_skills=["solidity", "web3.py", "hardhat", "ipfs", "rust"]
-)
-```
-
-### Load From Directory
-
-```python
-# Process all .txt resumes in a folder
-ranked = assistant.rank_from_directory("./resumes/", job=job)
-```
-
----
-
-## 📊 Scoring Model
-
-The overall score (0–100) is a weighted composite:
-
-```
-Overall = Skills×0.55 + Experience×0.30 + Education×0.15
-```
-
-**Skills score breakdown:**
-- Required skills coverage → 70% of skills score
-- Preferred skills coverage → 30% of skills score
-- Certification bonus → up to +5 bonus points
-- Adjacent-skill credit via taxonomy matching
-
-**Experience scoring:** Tiered ratio against requirement, with overqualification awareness.
-
-**Education scoring:** Level-based comparison with partial credit for near-misses.
-
-| Score | Recommendation |
-|---|---|
-| ≥ 80 | 🟢 Strong Match — Recommended for Interview |
-| ≥ 65 | 🔵 Good Match — Consider for Interview |
-| ≥ 50 | 🟡 Partial Match — Review Manually |
-| ≥ 35 | 🟠 Weak Match — Not Recommended |
-| < 35 | 🔴 Poor Match — Does Not Meet Requirements |
-
----
-
-## 🧪 Tests
+### 2. Navigate to the Project Directory
 
 ```bash
-# Run via CLI
-python cli.py test
-
-# Or directly
-python tests/test_suite.py
-
-# Or with pytest
-pytest tests/ -v
+cd Intelligent-Resume-Analyzer_HiDevs
 ```
 
-**56 tests across 7 test classes:**
-- `TestResumeParser` — extraction accuracy (name, email, phone, skills, education...)
-- `TestModels` — data model validation and serialization roundtrips
-- `TestMatchingEngine` — scoring accuracy, edge cases, custom weights
-- `TestReportGenerator` — TXT and HTML report content validation
-- `TestAnalyticsEngine` — batch statistics and aggregation
-- `TestFileManager` — file I/O, JSON persistence, batch loading
-- `TestIntegration` — full end-to-end pipeline tests
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the Application
+
+```bash
+python app.py
+```
+
+Follow the prompts to provide resume information and the required skills for the target job role.
 
 ---
 
-## 📤 Output Files
+## ⚙️ How It Works
 
-For each candidate processed, the system generates:
+The system follows a simple resume-screening pipeline:
 
-| File | Format | Contents |
-|---|---|---|
-| `{name}_profile.json` | JSON | Full parsed candidate profile |
-| `{name}_results.json` | JSON | Match scores with full breakdown |
-| `{name}_report.txt` | Plain text | Human-readable analysis with ASCII bars |
-| `{name}_report.html` | HTML | Rich self-contained visual report |
-| `{job}_ranking.txt` | Plain text | Ranked candidate comparison |
-| `{job}_analytics.json` | JSON | Batch analytics and score distribution |
-
----
-
-## 🛠️ CLI Reference
-
-```
-python cli.py <command> [options]
-
-Commands:
-  analyze     Analyze a single resume against a job
-  rank        Rank all resumes in a directory
-  test        Run the test suite
-  jobs        List all built-in job presets
-
-Options:
-  --output    Output directory (default: output/)
-  --verbose   Enable debug logging
-
-Analyze options:
-  --resume    Path to resume .txt file
-  --job       Job preset: backend | fullstack | junior | data | devops | ml
-  --all-jobs  Match against all presets
-  --no-html   Skip HTML report generation
-
-Rank options:
-  --dir       Directory containing .txt resume files
-  --job       Job preset to rank against
+```text
+Resume Input
+     │
+     ▼
+Resume Parser
+     │
+     ├── Extract Candidate Name
+     ├── Extract Email
+     ├── Identify Skills
+     └── Detect Experience
+     │
+     ▼
+Matching Engine
+     │
+     ├── Compare Required Skills
+     ├── Evaluate Experience
+     └── Calculate Match Score
+     │
+     ▼
+Recommendation Engine
+     │
+     ├── Generate Hiring Recommendation
+     └── Identify Missing Skills
+     │
+     ▼
+Report Generator
+     │
+     └── Export Results in JSON Format
 ```
 
 ---
 
-## 🏗️ Architecture
+## 📊 Matching and Scoring
 
-```
-Raw Resume Text
-      │
-      ▼
-┌─────────────┐    Section-aware parsing
-│ ResumeParser│    Regex extraction
-│             │    Confidence scoring
-└──────┬──────┘
-       │  Candidate
-       ▼
-┌─────────────┐    Skill taxonomy matching
-│MatchingEngine    Experience tier scoring
-│             │    Education level comparison
-└──────┬──────┘
-       │  MatchResult
-       ▼
-┌─────────────┐    Plain text report
-│ReportGenerator    HTML report
-│             │    Score visualisation
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐    JSON persistence
-│ FileManager │    Batch loading
-│             │    Analytics export
-└─────────────┘
-```
+The analyzer evaluates candidates based on their compatibility with the job requirements.
+
+**The analysis includes:**
+
+* Skill coverage: Measures how many required skills are present in the candidate's resume.
+* Experience evaluation: Considers the candidate's relevant years of experience.
+* Match score: Produces an overall score from 0 to 100.
+* Missing skills: Highlights the skills that may need further evaluation.
+* Recommendation: Classifies candidates based on their overall match score.
+
+The score is intended to support initial screening and should not replace human evaluation during hiring.
+
+---
+
+## 📤 Output
+
+The application generates structured JSON data containing candidate information and analysis results.
+
+| Output                 | Description                                                          |
+| ---------------------- | -------------------------------------------------------------------- |
+| `resume.json`          | Stores extracted candidate profile information.                      |
+| `analysis_report.json` | Contains the match score, missing skills, and hiring recommendation. |
+
+These outputs can be used for further analysis, integration with other applications, or record keeping.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python** — Core programming language
+* **Regular Expressions (Regex)** — Pattern-based information extraction
+* **JSON** — Structured data storage
+* **Object-Oriented Programming** — Modular and maintainable code
+* **Git & GitHub** — Version control and project collaboration
+
+---
+
+## 🎯 Use Cases
+
+* Initial resume screening for recruiters
+* Candidate skill-gap identification
+* Comparing candidate profiles against job requirements
+* Automating repetitive resume evaluation tasks
+* Demonstrating practical Python applications in HR Tech
+
+---
+
+## 🎥 Project Demo
+
+Watch the project demonstration:
+
+[▶️ Intelligent Resume Analyzer — YouTube Demo](https://youtu.be/LsFSOYBerVY?si=I1oilf_5AFvBZF_K)
+
+---
+
+## 👨‍💻 Author
+
+**Aman Rao**
+
+Computer Science and Business Systems (CSBS) Student
+
+BMS Institute of Technology and Management
+
+* GitHub: [@Amanrao8716](https://github.com/Amanrao8716)
+* Project Repository: [Intelligent Resume Analyzer](https://github.com/Amanrao8716/Intelligent-Resume-Analyzer_HiDevs)
 
 ---
 
 ## 📄 License
 
-Copyright (c) 2026 Nithin Bharadwaj
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
-
----
-
-## 👤 Author
-Nithin Bharadwaj
-
-Capstone Project: Intelligent Resume Analyzer  
-Demonstrates resume parsing, skill matching, and candidate recommendation using Python.
+This project was developed as part of the HiDevs HR Tech project initiative for learning and demonstrating resume screening and candidate matching concepts.
