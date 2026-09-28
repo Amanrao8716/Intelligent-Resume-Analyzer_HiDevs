@@ -169,10 +169,6 @@ Watch the project demonstration:
 
 **Aman Rao**
 
-Computer Science and Business Systems (CSBS) Student
-
-BMS Institute of Technology and Management
-
 * GitHub: [@Amanrao8716](https://github.com/Amanrao8716)
 * Project Repository: [Intelligent Resume Analyzer](https://github.com/Amanrao8716/Intelligent-Resume-Analyzer_HiDevs)
 
