@@ -1,0 +1,26 @@
+Alice Johnson
+alice.johnson@email.com | +1-555-0101
+linkedin.com/in/alicejohnson | github.com/alicejohnson
+New York, NY
+
+Summary
+Experienced backend engineer with 5+ years building high-traffic Python services.
+Passionate about clean architecture, microservices, and DevOps culture.
+
+Skills
+Python, Django, Flask, FastAPI, REST API, GraphQL, PostgreSQL, Redis,
+Docker, Kubernetes, AWS, CI/CD, Git, Linux, Agile, Microservices, Bash
+
+Experience
+Senior Software Engineer – TechCorp Inc (2020 – Present)
+  Led a team of 4 engineers building microservices serving 2M+ daily users.
+  Reduced API response time by 40% through Redis caching.
+
+Software Developer – StartupXYZ (2018 – 2020)
+  Built REST APIs with Flask and PostgreSQL. Implemented CI/CD with GitHub Actions.
+
+Education
+Bachelor of Science in Computer Science – State University, 2018
+
+Certifications
+AWS Certified Solutions Architect – Associate

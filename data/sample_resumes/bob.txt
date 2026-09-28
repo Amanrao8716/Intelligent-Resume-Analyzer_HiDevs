@@ -1,0 +1,17 @@
+Bob Martinez
+bob.martinez@gmail.com | 555-0202
+github.com/bobmartinez
+Austin, TX
+
+Objective
+Motivated junior developer looking to grow in a collaborative Python environment.
+
+Skills
+Python, JavaScript, HTML, CSS, Git, SQL, Flask, Bootstrap
+
+Experience
+Web Development Intern – WebAgency (2023 – 2024)
+  Built frontend pages using HTML, CSS, JavaScript. Wrote SQL queries for reports.
+
+Education
+Diploma in Software Development – Community College, 2022

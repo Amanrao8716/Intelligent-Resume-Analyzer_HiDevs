@@ -1,0 +1,15 @@
+# Smart Hiring Assistant v2 — Dependencies
+# All core functionality uses Python standard library only.
+# No external packages required to run the system.
+
+# Optional: for running tests with pytest (instead of built-in unittest)
+# pytest>=7.0
+
+# Optional: for type checking
+# mypy>=1.0
+
+# Optional: for linting
+# flake8>=6.0
+# pylint>=2.17
+
+# Python version requirement: >= 3.9

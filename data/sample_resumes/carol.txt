@@ -1,0 +1,26 @@
+Carol Singh
+carol.singh@techmail.com | +91-9876543210
+linkedin.com/in/carolsingh | github.com/carolsingh
+Bangalore, India
+
+Summary
+Full-stack engineer with 7 years of experience across frontend, backend, and cloud.
+Strong advocate for clean code, TDD, and continuous delivery.
+
+Skills
+Python, React, TypeScript, Node.js, PostgreSQL, MongoDB, Redis,
+AWS, Docker, Kubernetes, Terraform, GraphQL, Git, Agile, Leadership, CI/CD, Testing
+
+Experience
+Lead Developer – GlobalSoft Ltd (2019 – Present)
+  Architected and led delivery of a SaaS platform used by 500+ enterprise clients.
+
+Software Engineer – DevHouse (2017 – 2019)
+  Built full-stack features using Python/Django and React.
+
+Education
+Master of Science in Software Engineering – Tech University, 2017
+
+Certifications
+AWS Certified DevOps Engineer – Professional
+Google Cloud Professional Data Engineer
