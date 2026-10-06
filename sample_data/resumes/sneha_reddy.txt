@@ -1,0 +1,13 @@
+Name: Sneha Reddy
+Email: sneha.reddy@example.com
+Phone: 8123456789
+
+I am a web developer with 2 years of experience in building websites for small
+businesses. I work with HTML5, CSS3, JavaScript, jQuery, Bootstrap and PHP and
+I use MySQL for databases. I also know Git and Linux. I enjoy teamwork.
+
+Education
+Diploma in Computer Engineering, Government Polytechnic, Mysuru
+
+Certificates
+Full Stack Web Development Bootcamp - Certificate of Completion

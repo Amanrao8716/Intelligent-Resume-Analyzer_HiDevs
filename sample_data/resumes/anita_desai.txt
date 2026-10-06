@@ -1,0 +1,31 @@
+Anita Desai
+Data Analyst
+anita.desai@example.com
++91-99001-23456
+
+SUMMARY
+Data analyst with 3 years of experience turning messy data into decisions.
+Excellent communication and critical thinking.
+
+SKILLS
+Python, SQL, Pandas, NumPy, Matplotlib, scikit-learn, Tableau, Power BI,
+Microsoft Excel, Machine Learning, Data Analysis
+
+EXPERIENCE
+Data Analyst, RetailMetrics Pvt Ltd
+Oct 2023 - Present
+- Built Tableau dashboards used by 40 store managers
+- Wrote SQL queries and pandas pipelines to clean sales data
+- Trained a churn model with scikit-learn (accuracy 84%)
+
+Business Analyst Intern, FinCore
+Jan 2023 - Jun 2023
+- Automated weekly Excel reports with Python
+
+EDUCATION
+M.Sc. Statistics, Bangalore University (2021 - 2023)
+B.Sc. Mathematics, St. Joseph's College (2018 - 2021)
+
+CERTIFICATIONS
+Google Data Analytics Professional Certificate
+Tableau Desktop Specialist

@@ -1,0 +1,32 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1595 >>
+stream
+BT /F1 11 Tf 15 TL 40 760 Td (PRIYA SHARMA) Tj T* (Bengaluru, India | priya.sharma@example.com | +91 98450 12345) Tj T* (linkedin.com/in/priya-sharma-demo) Tj T* () Tj T* (PROFESSIONAL SUMMARY) Tj T* (Backend engineer with 5 years of experience building REST APIs and data) Tj T* (pipelines. Strong communication skills and a team player.) Tj T* () Tj T* (TECHNICAL SKILLS) Tj T* (Languages: Python, SQL, JavaScript, Bash) Tj T* (Frameworks: Django, Flask, FastAPI) Tj T* (Databases: PostgreSQL, MongoDB, Redis) Tj T* (Cloud & DevOps: AWS \(EC2, S3, Lambda\), Docker, Git, CI/CD, Linux) Tj T* () Tj T* (EXPERIENCE) Tj T* (Software Engineer - FinServe Technologies, Bengaluru) Tj T* (Jul 2022 - Present) Tj T* (- Built RESTful APIs with Django and PostgreSQL serving 200k daily requests) Tj T* (- Containerised services with Docker and automated deployments using CI/CD) Tj T* (- Mentored two junior developers and led weekly code reviews) Tj T* () Tj T* (Junior Developer - CloudNine Solutions, Bengaluru) Tj T* (Jun 2021 - Jun 2022) Tj T* (- Wrote Python scripts to automate reporting and reduced manual work by 60%) Tj T* (- Maintained MongoDB collections and wrote unit tests with pytest) Tj T* () Tj T* (EDUCATION) Tj T* (B.E. in Computer Science, RV College of Engineering, Bangalore \(2017 - 2021\)) Tj T* () Tj T* (PROJECTS) Tj T* (Inventory Tracker API) Tj T* (- Flask + PostgreSQL service with JWT authentication) Tj T* (Expense Analyzer) Tj T* (- Python and pandas tool that categorises bank statements) Tj T* () Tj T* (CERTIFICATIONS) Tj T* (AWS Certified Cloud Practitioner) Tj T* ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1958
+%%EOF

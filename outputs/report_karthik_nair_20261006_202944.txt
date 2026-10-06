@@ -1,0 +1,65 @@
+================================================================
+INTELLIGENT RESUME ANALYSIS REPORT
+================================================================
+Generated: 2026-10-06 20:29
+
+CANDIDATE INFORMATION
+----------------------------------------------------------------
+Name:       Karthik Nair
+Email:      karthik.nair@example.com
+Phone:      +91 90000 11122
+Education:  M.Tech Computer Science, NIT Calicut (2016 - 2018), B.Tech Information Technology, CUSAT (2012 - 2016)
+Experience: 7 years
+Skills:     java, javascript, typescript, html, css, react, spring boot, mysql, postgresql, redis, aws, docker, kubernetes, jenkins, ci/cd, git, microservices, kafka, junit, unit testing, agile, scrum
+Soft skills: leadership, mentoring
+Certifications: AWS Certified Developer - Associate, Certified Scrum Master
+Projects:   Fleet Tracking Platform, Hospital Appointment Portal
+
+JOB INFORMATION
+----------------------------------------------------------------
+Position:           Python Backend Developer
+Required skills:    Python, Django, SQL, REST API, Git
+Preferred skills:   AWS, Docker, PostgreSQL, CI/CD
+Minimum experience: 3 years
+Required education: Bachelor's
+
+ANALYSIS
+----------------------------------------------------------------
+Overall match score: 60 / 100
+Required skills:   10 / 50 points - 1 of 5 required skills matched
+Preferred skills:  15 / 15 points - 4 of 4 preferred skills matched
+Experience:        25 / 25 points - 7 years vs 3 required
+Education:         10 / 10 points - Candidate: Master's degree; required: Bachelor's degree
+Matched skills (required):  git
+Missing skills (required):  python, django, sql, rest api
+Matched skills (preferred): aws, docker, postgresql, ci/cd
+Missing skills (preferred): None
+
+RECOMMENDATION
+----------------------------------------------------------------
+Recommend
+
+ADDITIONAL INSIGHTS
+----------------------------------------------------------------
+Candidate strengths:
+  - Matches 1 of 5 required skills: git.
+  - Has preferred skills: aws, docker, postgresql, ci/cd.
+  - Meets the experience requirement (7 years vs 3 required).
+  - Education meets the requirement (Master's degree).
+  - Lists 2 certification(s).
+  - Lists 2 project(s).
+Skill gaps and areas for improvement:
+  - Missing required skills: python, django, sql, rest api.
+Suggested interview questions (rule-based):
+  - Your resume does not mention python. Do you have related experience, and how would you get up to speed on it?
+  - Your resume does not mention django. Do you have related experience, and how would you get up to speed on it?
+  - Describe a project where you used git and the hardest problem you solved with it.
+  - Walk us through your project 'Fleet Tracking Platform': your role, the design decisions, and what you would improve.
+  - What interests you about the Python Backend Developer position, and how would you approach your first 90 days?
+
+Explanation of the recommendation:
+  The candidate scored 60/100 for 'Python Backend Developer'. Required skills: 10/50 (1 of 5 required skills matched); Preferred skills: 15/15 (4 of 4 preferred skills matched); Experience: 25/25 (7 years vs 3 required); Education: 10/10 (Candidate: Master's degree; required: Bachelor's degree). A score of 60 falls in the 'Recommend' band (80-100 Strongly Recommend, 60-79 Recommend, 40-59 Consider, 0-39 Not Recommended). This is decision support for a recruiter, not a final hiring decision.
+
+----------------------------------------------------------------
+This report supports recruiter review. It is not a final hiring decision, and no protected characteristics were used in the analysis.
+================================================================

@@ -1,0 +1,8 @@
+{
+  "title": "Junior Web Developer",
+  "required_skills": ["HTML", "CSS", "JavaScript"],
+  "preferred_skills": ["React", "Git", "Bootstrap"],
+  "min_experience": 1,
+  "required_education": "Diploma",
+  "job_description": "Develop responsive front-end pages and fix bugs with the web team."
+}

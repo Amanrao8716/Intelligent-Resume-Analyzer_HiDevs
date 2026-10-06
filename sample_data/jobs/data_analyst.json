@@ -1,0 +1,8 @@
+{
+  "title": "Data Analyst",
+  "required_skills": ["Python", "SQL", "Pandas", "Data Analysis", "Tableau"],
+  "preferred_skills": ["Power BI", "Machine Learning", "Communication"],
+  "min_experience": 2,
+  "required_education": "Bachelor's",
+  "job_description": "Analyse business data, build dashboards and present insights."
+}

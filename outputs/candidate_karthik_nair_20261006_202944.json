@@ -1,0 +1,47 @@
+{
+  "name": "Karthik Nair",
+  "email": "karthik.nair@example.com",
+  "phone": "+91 90000 11122",
+  "skills": [
+    "java",
+    "javascript",
+    "typescript",
+    "html",
+    "css",
+    "react",
+    "spring boot",
+    "mysql",
+    "postgresql",
+    "redis",
+    "aws",
+    "docker",
+    "kubernetes",
+    "jenkins",
+    "ci/cd",
+    "git",
+    "microservices",
+    "kafka",
+    "junit",
+    "unit testing",
+    "agile",
+    "scrum"
+  ],
+  "soft_skills": [
+    "leadership",
+    "mentoring"
+  ],
+  "experience": 7.0,
+  "education": [
+    "M.Tech Computer Science, NIT Calicut (2016 - 2018)",
+    "B.Tech Information Technology, CUSAT (2012 - 2016)"
+  ],
+  "certifications": [
+    "AWS Certified Developer - Associate",
+    "Certified Scrum Master"
+  ],
+  "projects": [
+    "Fleet Tracking Platform",
+    "Hospital Appointment Portal"
+  ],
+  "source_file": "karthik_nair.txt"
+}

@@ -1,0 +1,21 @@
+Rahul Verma
+rahul.verma@example.com | 9876543210 | Bangalore
+
+OBJECTIVE
+Second-year computer science student looking for a web development internship.
+
+EDUCATION
+B.E. Computer Science and Engineering, BMS Institute of Technology (2023 - 2027)
+Pre-University, Science stream, 2023
+
+SKILLS
+C, HTML, CSS, JavaScript, Git
+Soft skills: teamwork, adaptability
+
+PROJECTS
+Personal Portfolio Website
+- Responsive site built with HTML, CSS and JavaScript
+Library Management System
+- Console application written in C using file handling
+Weather Dashboard
+- Fetches data from a public REST API and shows it with JavaScript

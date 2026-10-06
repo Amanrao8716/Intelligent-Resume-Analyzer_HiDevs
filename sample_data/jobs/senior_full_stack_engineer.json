@@ -1,0 +1,8 @@
+{
+  "title": "Senior Full Stack Engineer",
+  "required_skills": ["Java", "Spring Boot", "React", "SQL", "Docker"],
+  "preferred_skills": ["AWS", "Kubernetes", "TypeScript", "Leadership"],
+  "min_experience": 6,
+  "required_education": "Bachelor's",
+  "job_description": "Lead delivery of customer-facing web applications and mentor engineers."
+}

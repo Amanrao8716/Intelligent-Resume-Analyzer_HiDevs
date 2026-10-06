@@ -1,0 +1,8 @@
+{
+  "title": "Python Backend Developer",
+  "required_skills": ["Python", "Django", "SQL", "REST API", "Git"],
+  "preferred_skills": ["AWS", "Docker", "PostgreSQL", "CI/CD"],
+  "min_experience": 3,
+  "required_education": "Bachelor's",
+  "job_description": "Build and maintain REST APIs and data services using Python and Django."
+}

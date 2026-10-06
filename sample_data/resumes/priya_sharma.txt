@@ -1,0 +1,37 @@
+PRIYA SHARMA
+Bengaluru, India | priya.sharma@example.com | +91 98450 12345
+linkedin.com/in/priya-sharma-demo
+
+PROFESSIONAL SUMMARY
+Backend engineer with 5 years of experience building REST APIs and data
+pipelines. Strong communication skills and a team player.
+
+TECHNICAL SKILLS
+Languages: Python, SQL, JavaScript, Bash
+Frameworks: Django, Flask, FastAPI
+Databases: PostgreSQL, MongoDB, Redis
+Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, Git, CI/CD, Linux
+
+EXPERIENCE
+Software Engineer - FinServe Technologies, Bengaluru
+Jul 2022 - Present
+- Built RESTful APIs with Django and PostgreSQL serving 200k daily requests
+- Containerised services with Docker and automated deployments using CI/CD
+- Mentored two junior developers and led weekly code reviews
+
+Junior Developer - CloudNine Solutions, Bengaluru
+Jun 2021 - Jun 2022
+- Wrote Python scripts to automate reporting and reduced manual work by 60%
+- Maintained MongoDB collections and wrote unit tests with pytest
+
+EDUCATION
+B.E. in Computer Science, RV College of Engineering, Bangalore (2017 - 2021)
+
+PROJECTS
+Inventory Tracker API
+- Flask + PostgreSQL service with JWT authentication
+Expense Analyzer
+- Python and pandas tool that categorises bank statements
+
+CERTIFICATIONS
+AWS Certified Cloud Practitioner

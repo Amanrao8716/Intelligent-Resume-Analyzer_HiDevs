@@ -1,0 +1,34 @@
+KARTHIK NAIR
+karthik.nair@example.com | +91 90000 11122 | Kochi, Kerala
+
+PROFESSIONAL SUMMARY
+Full-stack engineer with 7+ years of experience delivering enterprise web
+applications. Proven leadership and mentoring of small teams.
+
+TECHNICAL SKILLS
+Java, Spring Boot, React, TypeScript, JavaScript, HTML, CSS
+MySQL, PostgreSQL, Redis, Kafka
+Docker, Kubernetes, Jenkins, AWS, Git, Microservices, Agile
+
+WORK EXPERIENCE
+Senior Software Engineer, Orbit Systems
+Mar 2021 - Present
+- Led a team of five building microservices with Spring Boot and Kafka
+- Migrated services to Kubernetes on AWS, cutting deploy time by 70%
+
+Software Engineer, NetBridge
+Jun 2018 - Feb 2021
+- Developed React and Java applications for banking clients
+- Introduced unit testing with JUnit and CI/CD with Jenkins
+
+EDUCATION
+M.Tech Computer Science, NIT Calicut (2016 - 2018)
+B.Tech Information Technology, CUSAT (2012 - 2016)
+
+PROJECTS
+Fleet Tracking Platform
+Hospital Appointment Portal
+
+CERTIFICATIONS
+AWS Certified Developer - Associate
+Certified Scrum Master
