@@ -5,6 +5,10 @@ extracts candidate information, compares it with job requirements using a
 **deterministic, explainable 0-100 score**, and produces recommendations and
 professional reports. Optional AI features add suggestions but never touch the score.
 
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/AVGtFz3-Qrg/maxresdefault.jpg)](https://youtu.be/AVGtFz3-Qrg)
+
 ## Key features
 
 - Reads **PDF** (via `pypdf`) and **TXT** resumes; handles empty, corrupted, encrypted and
